@@ -1,0 +1,126 @@
+@import url(m_style.css);
+.full(@w,@h,@bg){
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+//封装弹性盒
+.box(@dir:horizontal){
+    display: -webkit-box;//把父元素设置为弹性盒布局
+    -webkit-box-orient: @dir;//为父元素设置子元素的排列方式
+}
+html,body,.container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;    
+}
+html{
+    font-size: 16px;//等于根元素的字体大小 1rem=16px 
+    font-size: 62.5%;//1rem=16*0.625=10px
+}
+.container{
+    .box(vertical);
+    header{
+        .full(100%,4rem,#ff7417);
+        .box;
+        -webkit-box-align: center;//水平排列的时候algin表示垂直居中        
+        span{
+            margin-left: 0.4rem;
+            a{
+                img{
+                    .full(1.8rem,auto,none);                    
+                }
+            }
+        }
+        h3{
+            -webkit-box-flex: 1;
+            text-align: center;
+            font-size: 1.2rem;
+            color: white;
+        }
+        i{
+            margin-right: 0.75rem;
+            a{
+                img{
+                    .full(1.3rem,auto,none);
+                }
+            }
+        }
+    }
+    section{
+        -webkit-box-flex: 1;
+        .banner{
+            img{
+                .full(100%,auto,none);
+            }            
+        }
+        .main{
+            .box;
+            margin-top: 1.2rem;
+            dl{
+                -webkit-box-flex: 1;
+                text-align: center;
+                dt{
+//                  margin-left: 2.4rem;
+                    img{
+                        .full(5.5rem,auto,none);
+                    }
+                }
+                dd{
+                    margin-top: 0.45rem;
+                    a{
+                        color: #ff7419;
+                    }
+                }
+            }
+        }
+        .all{
+            .box;
+            margin-top: 0.75rem;
+            dl{
+                -webkit-box-flex: 1;
+                text-align: center;
+                dt{
+//                  margin-left: 2.4rem;
+                    img{
+                        .full(5.5rem,auto,none);
+                    }
+                }
+                dd{
+                    margin-top: 0.45rem;
+                    a{
+                        color: #ff7419;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        .full(100%,4.2rem,#ff7417);
+        .box;
+        &:first-child{
+        background: -webkit-linear-gradient(bottom,#fe9901,#ff7417); 
+        }
+//      
+        dl{
+            -webkit-box-flex: 1;
+            -webkit-box-align: center;
+            dt{
+                margin-top: 0.5rem;
+                a{
+                    img{
+                        width: 1.7rem;
+                    }
+                }
+            }
+            dd{
+                margin-top: 0.5rem;
+                a{
+                    color: white;
+                }
+                
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,120 @@
+@import url(m_style.css);
+html,
+body,
+.container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+html {
+  font-size: 16px;
+  font-size: 62.5%;
+}
+.container {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.container header {
+  width: 100%;
+  height: 4rem;
+  background: #ff7417;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+}
+.container header span {
+  margin-left: 0.4rem;
+}
+.container header span a img {
+  width: 1.8rem;
+  height: auto;
+  background: none;
+}
+.container header h3 {
+  -webkit-box-flex: 1;
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+}
+.container header i {
+  margin-right: 0.75rem;
+}
+.container header i a img {
+  width: 1.3rem;
+  height: auto;
+  background: none;
+}
+.container section {
+  -webkit-box-flex: 1;
+}
+.container section .banner img {
+  width: 100%;
+  height: auto;
+  background: none;
+}
+.container section .main {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  margin-top: 1.2rem;
+}
+.container section .main dl {
+  -webkit-box-flex: 1;
+  text-align: center;
+}
+.container section .main dl dt img {
+  width: 5.5rem;
+  height: auto;
+  background: none;
+}
+.container section .main dl dd {
+  margin-top: 0.45rem;
+}
+.container section .main dl dd a {
+  color: #ff7419;
+}
+.container section .all {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  margin-top: 0.75rem;
+}
+.container section .all dl {
+  -webkit-box-flex: 1;
+  text-align: center;
+}
+.container section .all dl dt img {
+  width: 5.5rem;
+  height: auto;
+  background: none;
+}
+.container section .all dl dd {
+  margin-top: 0.45rem;
+}
+.container section .all dl dd a {
+  color: #ff7419;
+}
+.container footer {
+  width: 100%;
+  height: 4.2rem;
+  background: #ff7417;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.container footer:first-child {
+  background: -webkit-linear-gradient(bottom, #fe9901, #ff7417);
+}
+.container footer dl {
+  -webkit-box-flex: 1;
+  -webkit-box-align: center;
+}
+.container footer dl dt {
+  margin-top: 0.5rem;
+}
+.container footer dl dt a img {
+  width: 1.7rem;
+}
+.container footer dl dd {
+  margin-top: 0.5rem;
+}
+.container footer dl dd a {
+  color: white;
+}
